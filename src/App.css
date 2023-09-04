@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+    background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.center{
+    display:flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 auto;    
+    flex-wrap:wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main{
+    padding:40px 0;
+    background-color: #990099;
+    min-height: 400px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.menu{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu a{
+    color: white;
+    text-shadow:black 0 2px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
 }
+
+.form{
+    display:flex;
+    width:100%;
+    margin-top:100px;       
+    flex-direction: column;
+    margin-left:50%;
+    justify-content: center;
+}
+
+.form h3{
+    color:violet;
+    
+
+}
+
+.form input{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+    
+    
+
+}
+
+.form input[type=submit]{
+    width:80px;
+    height: 40px;
+    text-align: center;
+    background-color: violet;
+    cursor:pointer;
+    border:0;    
+}
+.content{
+    background-color: blue;
+    display:flex;
+    
+}
+.blanka{
+    background-color: blue;
+    margin-top:0;
+    height:350px;
+}
+.textbox{
+    
+    background-color: aquamarine;      
+    padding:20px;
+    margin-top: 40px;
+    width:50%;
+    
+    flex:1;
+}
+
+.textbox2{
+    background-color: aquamarine;      
+    padding:20px;
+    margin-top: 40px;
+
+    flex:2;
+    width:50%;
+}
+@media (max-width: 368px){
+    .main{
+        min-width:screen;
+        background-color: aqua;
+    }
+
+}
+    
